@@ -2,7 +2,7 @@ ext {
     // 此处填写刚才建立的maven仓库的仓库名称
     bintrayRepo = 'fengjian'
     // library的group id
-    publishedGroupId = 'com.gradient'
+    publishedGroupId = 'com.fj'
     // library网站地址
     siteUrl = 'https://github.com/fengjian2015/gradient'
     // library仓库地址
@@ -23,10 +23,10 @@ ext {
     // library artifact（单个module一般就填写library name）
     artifact = 'gradient'
     libraryName = 'gradient'
-    libraryVersion = '1.0.1'
-    libraryDescription = ''
+    libraryVersion = '1.0.0'
+    libraryDescription = 'Gradient text'
     // bintrayName 是你在网页Repository页面能看到的名称
-    bintrayName = 'fengjian-' + artifact
+    bintrayName = artifact
 }
 
 apply from: '../installv1.gradle'

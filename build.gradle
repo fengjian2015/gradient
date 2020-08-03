@@ -21,6 +21,10 @@ allprojects {
     repositories {
         google()
         jcenter()
+        maven {
+            //在第一步新建的maven repo地址
+            url 'https://dl.bintray.com/umsdk/release'
+        }
     }
 }
 

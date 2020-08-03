@@ -1,7 +1,44 @@
 # 渐变框文本框和渐变文本
 ### 提示文本输入框
 ##### 话不多说，先展示效果
-![image](https://github.com/fengjian2015/gradient/tree/master/gradient/gifhome_626x1280_5s.gif)
+![image](https://github.com/fengjian2015/gradient/blob/master/gradient/gifhome_626x1280_5s.gif)
+
+#####引入方式
+ implementation 'com.fj:gradient:1.0.0'
+
+ #####示例
+ ```
+ <om.gradient.GradientTextView
+        android:id="@+id/gtv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Hello World!"
+        android:textSize="18sp"
+        app:gtv_startColor="#dd99ff"
+        app:gtv_endColor="#9900e6"
+        app:gtv_unEndColor="#ffb3d1"
+        app:gtv_unStartColor="#ffb3d1"
+        app:gtv_isSelected="true"
+         />
+    <om.gradient.RoundRainbowRelayoutLayout
+        android:id="@+id/rrrl"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        app:rrv_textSize="18sp"
+        app:rrv_startColor="#dd99ff"
+        app:rrv_endColor="#9900e6"
+        app:rrv_width="1dp"
+        app:rrv_radius="20dp"
+        app:rrv_unEndColor="#ffb3d1"
+        app:rrv_unStartColor="#ffb3d1"
+        app:rrv_text="设置"
+        app:rrv_isSelected="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        />
+ ```
 
 ##### RoundRainbowRelayoutLayout参数
 | attaes name        | 参数   |  用途  |
