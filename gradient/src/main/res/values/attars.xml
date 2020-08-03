@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RoundRainbowRelayoutLayout">
+        <!--圆框角度-->
+        <attr name="rrv_radius" format="dimension" />
+        <!--圆框线条宽度-->
+        <attr name="rrv_width" format="dimension" />
+        <!--圆框选中开始颜色-->
+        <attr name="rrv_startColor" format="color" />
+        <!--圆框选中结束颜色-->
+        <attr name="rrv_endColor" format="color" />
+        <!--圆框未选中开始颜色-->
+        <attr name="rrv_unStartColor" format="color" />
+        <!--圆框未选中结束颜色-->
+        <attr name="rrv_unEndColor" format="color" />
+        <!--是否选中-->
+        <attr name="rrv_isSelected" format="boolean" />
+        <!--文本-->
+        <attr name="rrv_text" format="string"></attr>
+        <!--文本大小-->
+        <attr name="rrv_textSize" format="dimension"/>
+        <!--选中图片-->
+        <attr name="rrv_selected_img" format="reference"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="GradientTextView">
+        <!--选中开始颜色-->
+        <attr name="gtv_startColor" format="color" />
+        <!--选中结束颜色-->
+        <attr name="gtv_endColor" format="color" />
+        <!--未选中开始颜色-->
+        <attr name="gtv_unStartColor" format="color" />
+        <!--未选中结束颜色-->
+        <attr name="gtv_unEndColor" format="color" />
+        <!--是否选中-->
+        <attr name="gtv_isSelected" format="boolean" />
+    </declare-styleable>
+</resources>

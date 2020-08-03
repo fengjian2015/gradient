@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <om.gradient.GradientTextView
+        android:id="@+id/gtv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Hello World!"
+        android:textSize="18sp"
+        app:gtv_startColor="#dd99ff"
+        app:gtv_endColor="#9900e6"
+        app:gtv_unEndColor="#ffb3d1"
+        app:gtv_unStartColor="#ffb3d1"
+        app:gtv_isSelected="true"
+         />
+    <om.gradient.RoundRainbowRelayoutLayout
+        android:id="@+id/rrrl"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        app:rrv_textSize="18sp"
+        app:rrv_startColor="#dd99ff"
+        app:rrv_endColor="#9900e6"
+        app:rrv_width="1dp"
+        app:rrv_radius="20dp"
+        app:rrv_unEndColor="#ffb3d1"
+        app:rrv_unStartColor="#ffb3d1"
+        app:rrv_text="设置"
+        app:rrv_isSelected="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        />
+</LinearLayout>
