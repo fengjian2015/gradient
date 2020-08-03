@@ -9,7 +9,6 @@ import android.graphics.Paint;
 import android.graphics.Rect;
 import android.graphics.RectF;
 import android.graphics.Shader;
-import android.support.annotation.Nullable;
 import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.util.TypedValue;
@@ -18,9 +17,6 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
-/**
- * 相对于RoundRainbowTextView做了优化，避免二次绘制字体镂空
- */
 public class RoundRainbowRelayoutLayout extends RelativeLayout {
     private static final float BORDER_WIDTH = 1f;//dp
     private static final float BORDER_RADIUS = 3f;//dp
@@ -51,17 +47,17 @@ public class RoundRainbowRelayoutLayout extends RelativeLayout {
         super(context);
     }
 
-    public RoundRainbowRelayoutLayout(Context context, @Nullable AttributeSet attrs) {
+    public RoundRainbowRelayoutLayout(Context context, AttributeSet attrs) {
         super(context, attrs);
         init(context,attrs);
     }
 
-    public RoundRainbowRelayoutLayout(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public RoundRainbowRelayoutLayout(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         init(context,attrs);
     }
 
-    private void init(Context context, @Nullable AttributeSet attrs){
+    private void init(Context context, AttributeSet attrs){
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.RoundRainbowRelayoutLayout);
 
         startColor = a.getColor(R.styleable.RoundRainbowRelayoutLayout_rrv_startColor, startColor);
@@ -222,9 +218,6 @@ public class RoundRainbowRelayoutLayout extends RelativeLayout {
         }
     }
 
-    /**
-     * 根据手机的分辨率从 dp 的单位 转成为 px(像素)
-     */
     private int dip2px(Context context, float dpValue) {
         final float scale = context.getResources().getDisplayMetrics().density;
         return (int) (dpValue * scale + 0.5f);

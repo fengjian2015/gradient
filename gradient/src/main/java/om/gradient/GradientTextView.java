@@ -4,7 +4,6 @@ import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.LinearGradient;
 import android.graphics.Shader;
-import android.support.annotation.Nullable;
 import android.text.TextPaint;
 import android.util.AttributeSet;
 
@@ -25,16 +24,16 @@ public class GradientTextView extends android.support.v7.widget.AppCompatTextVie
         super(context);
     }
 
-    public GradientTextView(Context context, @Nullable AttributeSet attrs) {
+    public GradientTextView(Context context, AttributeSet attrs) {
         super(context, attrs);
         init(context,attrs);
     }
 
-    public GradientTextView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public GradientTextView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         init(context,attrs);
     }
-    private void init(Context context, @Nullable AttributeSet attrs){
+    private void init(Context context, AttributeSet attrs){
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.GradientTextView);
         startColor = a.getColor(R.styleable.GradientTextView_gtv_startColor, startColor);
         endColor = a.getColor(R.styleable.GradientTextView_gtv_endColor, endColor);
